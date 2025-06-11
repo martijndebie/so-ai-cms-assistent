@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Smartocto.ai Assistent</title>
+  <link rel="stylesheet" id="smartocto-ai-style" type="text/css" href="smartocto-ai-settings.css">
+</head>
+
+<body class="popup">
+  <div class="smartocto-ai-header">
+    <div id="logo">
+      <img src="images/ai-logo.svg" alt="Smartocto.ai">
+    </div>
+    <div id="smartocto-ai-suggestions-close">
+      <img src="images/cross.svg" alt="Smartocto.ai">
+    </div>
+  </div>
+  <div class="smartocto-ai-container">
+    <div class="smartocto-ai-button-container">
+      <h3>Press button to launch</h3>
+
+      <button id="injectButton">Launch AI Assistent</button>
+    </div>
+    <div class="toggle-container" id="toggleSetupContainer">
+      <h3>Settings</h3>
+      <div class="arrow" id="arrow"></div>
+    </div>
+    <div id="smartocto-ai-setup-container">
+      <label for="smartocto-ai-apiToken">API Token:</label><br /><input type="password" id="smartocto-ai-apiToken"
+        placeholder="Insert API Token"><br /><br />
+      <label for="smartocto-ai-clientId">Client ID:</label><br /><input type="text" id="smartocto-ai-clientId"
+        placeholder="Insert Client ID"><br /><br />
+      <label for="smartocto-ai-brandId">Brand ID:</label><br /><input type="text" id="smartocto-ai-brandId"
+        placeholder="Insert Brand ID"><br /><br />
+      <div style="display:none">
+        <label for="domain">Domain:</label><br /><input type="text" id="domain"><br /><br />
+      </div>
+      <button id="saveButton">Save settings</button>
+      <div id="smartocto-ai-save-state" class="smartocto-ai-save-state"></div>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
